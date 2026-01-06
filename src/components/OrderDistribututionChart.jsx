@@ -22,14 +22,14 @@ const OrderDistribututionChart = () => {
   useEffect(() => {
     // Dummy data
     const dummyData = [
+      { name: "Education", value: 250 },
+      { name: "Healthcare", value: 180 },
       { name: "Food", value: 400 },
+      { name: "Rent", value: 800 },
       { name: "Travel", value: 300 },
       { name: "Shopping", value: 300 },
       { name: "Entertainment", value: 200 },
-      { name: "Rent", value: 800 },
       { name: "Utilities", value: 150 },
-      { name: "Healthcare", value: 180 },
-      { name: "Education", value: 250 },
       { name: "Savings", value: 350 },
       { name: "Others", value: 120 },
     ];

@@ -26,7 +26,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`relative z-10 transition-all shadow-lg duration-500 ease-in-out shrink-0 ${
+      className={`relative z-10 transition-all shadow-lg duration-300 ease-in-out shrink-0 ${
         isSideBarOpen ? "w-64" : "w-20"
       }`}
     >

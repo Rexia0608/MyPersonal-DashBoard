@@ -1,4 +1,3 @@
-import React from "react";
 import StatCard from "../components/StatCard";
 import {
   HiCurrencyDollar,
@@ -10,6 +9,7 @@ import { motion } from "framer-motion";
 import EnrollmentOverview from "../components/EnrollmentOverview";
 import CategoryDistributionChart from "../components/CategoryDistributionChart";
 import OrderDistribututionChart from "../components/OrderDistribututionChart";
+import ProductPerformance from "../components/ProductPerformance";
 
 const AdminOverview = () => {
   return (
@@ -39,6 +39,7 @@ const AdminOverview = () => {
             <EnrollmentOverview />
             <CategoryDistributionChart />
             <OrderDistribututionChart />
+            <ProductPerformance />
           </div>
         </main>
       </div>
