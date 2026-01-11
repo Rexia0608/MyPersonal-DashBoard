@@ -3,7 +3,8 @@ import TopHeader from "../components/TopHeader";
 import { Routes, Route } from "react-router-dom";
 import ProductTableRoute from "../routes/admin/ProductTableRoute";
 import AdminOverViewRoute from "../routes/admin/AdminOverviewRoute";
-import ManageUsersRoutes from "../routes/admin/ManageUsersRoutes";
+import ManageUsersRoute from "../routes/admin/ManageUsersRoute";
+import ManageScheduleRoute from "../routes/admin/ManageScheduleRoute";
 
 const DashboardLayout = () => {
   return (
@@ -17,8 +18,9 @@ const DashboardLayout = () => {
               <Routes>
                 <Route path="/" element={<AdminOverViewRoute />} />
                 <Route path="/home" element={<AdminOverViewRoute />} />
-                <Route path="/files" element={<ProductTableRoute />} />
-                <Route path="/users" element={<ManageUsersRoutes />} />
+                <Route path="/users" element={<ManageUsersRoute />} />
+                <Route path="/schedule" element={<ManageScheduleRoute />} />
+                <Route path="/transactions" element={<ProductTableRoute />} />
               </Routes>
             </main>
           </div>

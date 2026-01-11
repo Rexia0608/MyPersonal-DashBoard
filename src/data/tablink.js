@@ -1,6 +1,5 @@
 import {
   HiMiniHome,
-  HiOutlineCog8Tooth,
   HiMiniUsers,
   HiFolderOpen,
   HiClipboardDocumentList,
@@ -12,22 +11,20 @@ const tabLinks = [
     label: "Home",
     path: "/",
   },
-
-  {
-    icon: HiFolderOpen,
-    label: "Files",
-    path: "/files",
-  },
-
-  {
-    icon: HiClipboardDocumentList,
-    label: "Schedule",
-    path: "/schedule",
-  },
   {
     icon: HiMiniUsers,
     label: "Manage Users",
     path: "/users",
+  },
+  {
+    icon: HiClipboardDocumentList,
+    label: "Manage School Year",
+    path: "/schedule",
+  },
+  {
+    icon: HiFolderOpen,
+    label: "Transactions History",
+    path: "/transactions",
   },
 ];
 

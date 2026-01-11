@@ -1,6 +1,6 @@
 import UsersTable from "../../components/UsersTable";
 
-const ManageUsersRoutes = () => {
+const ManageUsersRoute = () => {
   return (
     <>
       <div className="flex-1 overflow-auto relative z-10">
@@ -14,4 +14,4 @@ const ManageUsersRoutes = () => {
   );
 };
 
-export default ManageUsersRoutes;
+export default ManageUsersRoute;
