@@ -6,11 +6,8 @@ import {
   HiMiniServerStack,
   HiOutlineCog8Tooth,
 } from "react-icons/hi2";
-import { useState } from "react";
 
 const Sidebar = () => {
-  const [isSideBarOpen, setOpenSideBarOpen] = useState(true);
-
   const activeLink = ({ isActive }) =>
     classNames(
       "flex items-center p-4 text-sm font-medium rounded-lg mb-2 transition-colors cursor-pointer",
@@ -25,24 +22,13 @@ const Sidebar = () => {
   };
 
   return (
-    <div
-      className={`relative z-10 transition-all shadow-lg duration-300 ease-in-out shrink-0 ${
-        isSideBarOpen ? "w-64" : "w-20"
-      }`}
-    >
+    <div className="relative z-10 transition-all shadow-lg duration-300 ease-in-out shrink-0 w-64">
       <div className="h-full bg-white backdrop-blur-md p-4 flex flex-col justify-between border-[#E5E7EB]">
         <nav className="mt-1 grow">
           {tabLinks.map(({ icon: Icon, label, path }) => (
-            <NavLink
-              onClick={() => setOpenSideBarOpen(!isSideBarOpen)}
-              key={label}
-              to={path}
-              className={activeLink}
-            >
+            <NavLink key={label} to={path} className={activeLink}>
               <Icon size={20} style={{ minWidth: "20px" }} />
-              {isSideBarOpen && (
-                <span className="ml-4 whitespace-nowrap">{label}</span>
-              )}
+              <span className="ml-4 whitespace-nowrap">{label}</span>
             </NavLink>
           ))}
         </nav>
@@ -50,15 +36,11 @@ const Sidebar = () => {
         <nav className="grow">
           <NavLink to="/settings" className={activeLink}>
             <HiOutlineCog8Tooth size={20} style={{ minWidth: "20px" }} />
-            {isSideBarOpen && (
-              <span className="ml-4 whitespace-nowrap">Settings</span>
-            )}
+            <span className="ml-4 whitespace-nowrap">Settings</span>
           </NavLink>
           <NavLink to="/maintinance" className={activeLink}>
             <HiMiniServerStack size={20} style={{ minWidth: "20px" }} />
-            {isSideBarOpen && (
-              <span className="ml-4 whitespace-nowrap">Maintenance</span>
-            )}
+            <span className="ml-4 whitespace-nowrap">Maintenance</span>
           </NavLink>
           <div
             onClick={handleLogout}
@@ -68,19 +50,14 @@ const Sidebar = () => {
               size={20}
               style={{ minWidth: "20px" }}
             />
-            {isSideBarOpen && (
-              <span className="ml-4 whitespace-nowrap">Sign out</span>
-            )}
+            <span className="ml-4 whitespace-nowrap">Sign out</span>
           </div>
         </nav>
-
-        {isSideBarOpen && (
-          <div className="text-center">
-            <span className="text-gray-400 text-xs">
-              Deveoped by: John Rey C.
-            </span>
-          </div>
-        )}
+        <div className="text-center">
+          <span className="text-gray-400 text-xs">
+            Deveoped by: John Rey C.
+          </span>
+        </div>
       </div>
     </div>
   );

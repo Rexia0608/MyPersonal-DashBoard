@@ -1,4 +1,4 @@
-import StatCard from "../components/StatCard";
+import StatCard from "../../components/StatCard";
 import {
   HiCurrencyDollar,
   HiBookOpen,
@@ -6,12 +6,12 @@ import {
   HiCalendar,
 } from "react-icons/hi2";
 import { motion } from "framer-motion";
-import EnrollmentOverview from "../components/EnrollmentOverview";
-import CategoryDistributionChart from "../components/CategoryDistributionChart";
-import OrderDistribututionChart from "../components/OrderDistribututionChart";
-import ProductPerformance from "../components/ProductPerformance";
+import EnrollmentOverview from "../../components/EnrollmentOverview";
+import CategoryDistributionChart from "../../components/CategoryDistributionChart";
+import OrderDistribututionChart from "../../components/OrderDistribututionChart";
+import ProductPerformance from "../../components/ProductPerformance";
 
-const AdminOverview = () => {
+const AdminOverViewRoute = () => {
   return (
     <>
       <div className="flex-1 overflow-auto relative z-10">
@@ -47,4 +47,4 @@ const AdminOverview = () => {
   );
 };
 
-export default AdminOverview;
+export default AdminOverViewRoute;
