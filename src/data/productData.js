@@ -1,5 +1,5 @@
 const productData = {
-  product: Array.from({ length: 50 }, (_, i) => {
+  product: Array.from({ length: 100 }, (_, i) => {
     const id = String(i + 1).padStart(3, "0");
 
     const categories = [

@@ -1,5 +1,5 @@
 const userData = {
-  users: Array.from({ length: 50 }, (_, i) => {
+  users: Array.from({ length: 20 }, (_, i) => {
     const id = String(i + 1).padStart(3, "0");
 
     const firstNames = [
@@ -29,7 +29,7 @@ const userData = {
     ];
 
     const roles = ["Admin", "Manager", "Staff", "Customer"];
-    const statuses = ["Active", "Inactive", "Suspended"];
+    const statuses = ["active", "inactive", "active"];
 
     const firstName = firstNames[i % firstNames.length];
     const lastName = lastNames[i % lastNames.length];
