@@ -3,7 +3,7 @@ import { Search, Trash2, Plus, Lock } from "lucide-react";
 import { HiLockClosed, HiLockOpen } from "react-icons/hi2";
 import { useState, useMemo, useCallback, useId, useEffect } from "react";
 import courseData from "../../data/dummyCourseData";
-import AddCourseModal from "./AddCourseModal";
+import AddCourseModal from "../Modal/AddCourseModal";
 import Pagination from "../Pagination/Pagination";
 
 /* ================= CONSTANTS ================= */

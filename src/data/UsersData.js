@@ -29,7 +29,7 @@ const userData = {
     ];
 
     const roles = ["Admin", "Manager", "Staff", "Customer"];
-    const statuses = ["active", "inactive", "active"];
+    const statuses = ["active", "inactive", "Locked"];
 
     const firstName = firstNames[i % firstNames.length];
     const lastName = lastNames[i % lastNames.length];

@@ -1,10 +1,12 @@
 import Sidebar from "../components/dashboardComponents/Sidebar";
 import TopHeader from "../components/dashboardComponents/TopHeader";
 import { Routes, Route } from "react-router-dom";
-import ProductTableRoute from "../routes/admin/ProductTableRoute";
+import ManageTransactions from "../routes/admin/ManageTransactionRoute";
 import AdminOverViewRoute from "../routes/admin/AdminOverviewRoute";
 import ManageUsersRoute from "../routes/admin/ManageUsersRoute";
 import ManageScheduleRoute from "../routes/admin/ManageScheduleRoute";
+import ManageSettingsRoute from "../routes/admin/ManageSettingsRoute";
+import ManageMaintenanceRoute from "../routes/admin/ManageMaintenanceRoute";
 
 const DashboardLayout = () => {
   return (
@@ -20,7 +22,12 @@ const DashboardLayout = () => {
                 <Route path="/home" element={<AdminOverViewRoute />} />
                 <Route path="/users" element={<ManageUsersRoute />} />
                 <Route path="/schedule" element={<ManageScheduleRoute />} />
-                <Route path="/transactions" element={<ProductTableRoute />} />
+                <Route path="/transactions" element={<ManageTransactions />} />
+                <Route path="/settings" element={<ManageSettingsRoute />} />
+                <Route
+                  path="/maintinance"
+                  element={<ManageMaintenanceRoute />}
+                />
               </Routes>
             </main>
           </div>
