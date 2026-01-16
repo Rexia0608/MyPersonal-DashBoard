@@ -15,7 +15,7 @@ import { useState, useMemo, useCallback } from "react";
 const ITEMS_PER_PAGE_OPTIONS = [5, 10, 25, 50];
 const MAX_VISIBLE_PAGES = 5;
 
-const UsersTable = () => {
+const TableUsers = () => {
   const [users, setUsers] = useState(userData.users);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -403,4 +403,4 @@ const UsersTable = () => {
   );
 };
 
-export default UsersTable;
+export default TableUsers;

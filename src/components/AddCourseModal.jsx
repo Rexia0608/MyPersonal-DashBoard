@@ -10,7 +10,6 @@ const AddCourseModal = ({ isOpen, onClose, onSubmit, isLoading = false }) => {
     category: "",
     schoolYear: "",
     semester: "",
-    status: "active",
     isEnrollmentOpen: true,
     price: 0,
   });
@@ -36,7 +35,7 @@ const AddCourseModal = ({ isOpen, onClose, onSubmit, isLoading = false }) => {
 
   // Generate school years (current year and next 3 years)
   const currentYear = new Date().getFullYear();
-  const schoolYears = Array.from({ length: 4 }, (_, i) => {
+  const schoolYears = Array.from({ length: 2 }, (_, i) => {
     const year = currentYear + i;
     return `${year}-${year + 1}`;
   });
@@ -108,7 +107,6 @@ const AddCourseModal = ({ isOpen, onClose, onSubmit, isLoading = false }) => {
       category: "",
       schoolYear: "",
       semester: "",
-      status: "active",
       isEnrollmentOpen: true,
       price: 0,
     });
@@ -236,26 +234,6 @@ const AddCourseModal = ({ isOpen, onClose, onSubmit, isLoading = false }) => {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              Status
-            </label>
-            <select
-              name="status"
-              value={formData.status}
-              onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors appearance-none"
-            >
-              {STATUSES.map((status) => (
-                <option key={status.value} value={status.value}>
-                  {status.label}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
               Price (PHP) *
             </label>
             <div className="relative">
@@ -280,25 +258,6 @@ const AddCourseModal = ({ isOpen, onClose, onSubmit, isLoading = false }) => {
             <p className="mt-1 text-xs text-gray-500">
               Enter 0 for free courses
             </p>
-          </div>
-
-          <div className="flex items-center space-x-3 pt-8">
-            <div className="flex items-center">
-              <input
-                type="checkbox"
-                id="isEnrollmentOpen"
-                name="isEnrollmentOpen"
-                checked={formData.isEnrollmentOpen}
-                onChange={handleChange}
-                className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-              />
-              <label
-                htmlFor="isEnrollmentOpen"
-                className="ml-2 text-sm text-gray-700"
-              >
-                Enrollment is open
-              </label>
-            </div>
           </div>
         </div>
 
