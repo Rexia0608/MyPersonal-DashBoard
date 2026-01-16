@@ -1,5 +1,5 @@
-import Sidebar from "../components/Sidebar";
-import TopHeader from "../components/TopHeader";
+import Sidebar from "../components/dashboardComponents/Sidebar";
+import TopHeader from "../components/dashboardComponents/TopHeader";
 import { Routes, Route } from "react-router-dom";
 import ProductTableRoute from "../routes/admin/ProductTableRoute";
 import AdminOverViewRoute from "../routes/admin/AdminOverviewRoute";

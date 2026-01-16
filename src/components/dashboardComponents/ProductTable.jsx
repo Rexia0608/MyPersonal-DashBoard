@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Search, Trash2, Edit } from "lucide-react";
-import productData from "../data/productData";
+import productData from "../../data/productData";
 import { useState, useMemo } from "react";
 
 const ITEMS_PER_PAGE = 10;

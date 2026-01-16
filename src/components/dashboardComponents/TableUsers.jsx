@@ -9,7 +9,7 @@ import {
   UserCheck,
   UserX,
 } from "lucide-react";
-import userData from "../data/UsersData";
+import userData from "../../data/UsersData";
 import { useState, useMemo, useCallback } from "react";
 
 const ITEMS_PER_PAGE_OPTIONS = [5, 10, 25, 50];

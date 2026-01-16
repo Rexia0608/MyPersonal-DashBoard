@@ -1,4 +1,4 @@
-import TableUsers from "../../components/TableUsers";
+import TableUsers from "../../components/dashboardComponents/TableUsers";
 
 const ManageUsersRoute = () => {
   return (

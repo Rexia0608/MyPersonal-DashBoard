@@ -1,4 +1,4 @@
-import StatCard from "../../components/StatCard";
+import StatCard from "../../components/dashboardComponents/StatCard";
 import {
   HiCurrencyDollar,
   HiBookOpen,
@@ -6,7 +6,7 @@ import {
   HiCalendar,
 } from "react-icons/hi2";
 import { motion } from "framer-motion";
-import ProductTable from "../../components/ProductTable";
+import ProductTable from "../../components/dashboardComponents/ProductTable";
 
 const ProductTableRoute = () => {
   return (

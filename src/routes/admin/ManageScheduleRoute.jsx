@@ -1,4 +1,4 @@
-import TableCourse from "../../components/TableCourse";
+import TableCourse from "../../components/dashboardComponents/TableCourse";
 
 const ManageUsersRoute = () => {
   return (

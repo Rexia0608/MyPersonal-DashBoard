@@ -1,7 +1,7 @@
 // components/AddCourseModal.jsx
 import { useState } from "react";
 import { Save, Loader2 } from "lucide-react";
-import Modal from "./Modal";
+import Modal from "../Modal/Modal";
 
 const AddCourseModal = ({ isOpen, onClose, onSubmit, isLoading = false }) => {
   const [formData, setFormData] = useState({

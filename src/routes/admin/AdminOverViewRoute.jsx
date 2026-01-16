@@ -1,4 +1,4 @@
-import StatCard from "../../components/StatCard";
+import StatCard from "../../components/dashboardComponents/StatCard";
 import {
   HiCurrencyDollar,
   HiBookOpen,
@@ -6,10 +6,10 @@ import {
   HiCalendar,
 } from "react-icons/hi2";
 import { motion } from "framer-motion";
-import EnrollmentOverview from "../../components/EnrollmentOverview";
-import CategoryDistributionChart from "../../components/CategoryDistributionChart";
-import OrderDistribututionChart from "../../components/OrderDistribututionChart";
-import ProductPerformance from "../../components/ProductPerformance";
+import EnrollmentOverview from "../../components/dashboardComponents/EnrollmentOverview";
+import CategoryDistributionChart from "../../components/dashboardComponents/CategoryDistributionChart";
+import OrderDistribututionChart from "../../components/dashboardComponents/OrderDistribututionChart";
+import ProductPerformance from "../../components/dashboardComponents/ProductPerformance";
 
 const AdminOverViewRoute = () => {
   return (

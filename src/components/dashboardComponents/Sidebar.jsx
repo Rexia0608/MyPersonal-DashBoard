@@ -1,4 +1,4 @@
-import tabLinks from "../data/tablink";
+import tabLinks from "../../data/tablink";
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 import {

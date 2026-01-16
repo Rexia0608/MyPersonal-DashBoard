@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
-import data from "../data/data";
+import data from "../../data/data";
 import { motion } from "framer-motion";
 
 const EnrollmentOverview = () => {
