@@ -6,7 +6,6 @@ import AdminOverViewRoute from "../routes/admin/AdminOverviewRoute";
 import ManageUsersRoute from "../routes/admin/ManageUsersRoute";
 import ManageScheduleRoute from "../routes/admin/ManageScheduleRoute";
 import ManageSettingsRoute from "../routes/admin/ManageSettingsRoute";
-import ManageMaintenanceRoute from "../routes/admin/ManageMaintenanceRoute";
 
 const DashboardLayout = () => {
   return (
@@ -24,10 +23,6 @@ const DashboardLayout = () => {
                 <Route path="/schedule" element={<ManageScheduleRoute />} />
                 <Route path="/transactions" element={<ManageTransactions />} />
                 <Route path="/settings" element={<ManageSettingsRoute />} />
-                <Route
-                  path="/maintinance"
-                  element={<ManageMaintenanceRoute />}
-                />
               </Routes>
             </main>
           </div>

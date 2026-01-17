@@ -1,6 +1,6 @@
 import React from "react";
 
-const StatCard = ({ name, icon: Icon, value, color }) => {
+const StatsCard = ({ name, icon: Icon, value, color }) => {
   return (
     <>
       <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
@@ -18,4 +18,4 @@ const StatCard = ({ name, icon: Icon, value, color }) => {
   );
 };
 
-export default StatCard;
+export default StatsCard;
