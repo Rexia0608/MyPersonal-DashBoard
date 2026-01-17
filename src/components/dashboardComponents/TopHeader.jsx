@@ -1,5 +1,5 @@
 import { HiOutlineUser } from "react-icons/hi2";
-import logo from "../../../public/images/Logo.png";
+import logo from "/images/Logo.png";
 
 const TopHeader = () => {
   return (
