@@ -88,7 +88,7 @@ const AdminSettingsRoute = () => {
   const handleResetToDefaults = () => {
     if (
       window.confirm(
-        "Reset all settings to defaults? This will clear your custom configurations."
+        "Reset all settings to defaults? This will clear your custom configurations.",
       )
     ) {
       setSettings({
@@ -306,7 +306,7 @@ const AdminSettingsRoute = () => {
                       ...settings,
                       sessionTimeout: Math.max(
                         5,
-                        Math.min(240, parseInt(e.target.value) || 30)
+                        Math.min(240, parseInt(e.target.value) || 30),
                       ),
                     })
                   }
@@ -335,7 +335,7 @@ const AdminSettingsRoute = () => {
                       ...settings,
                       maxLoginAttempts: Math.max(
                         3,
-                        Math.min(10, parseInt(e.target.value) || 5)
+                        Math.min(10, parseInt(e.target.value) || 5),
                       ),
                     })
                   }
@@ -366,7 +366,7 @@ const AdminSettingsRoute = () => {
                       ...settings,
                       passwordMinLength: Math.max(
                         6,
-                        Math.min(32, parseInt(e.target.value) || 8)
+                        Math.min(32, parseInt(e.target.value) || 8),
                       ),
                     })
                   }

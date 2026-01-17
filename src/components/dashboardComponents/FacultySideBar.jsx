@@ -1,20 +1,19 @@
-import tabLinks from "../../data/tablink";
+import FacultyTabLink from "../../data/FacultyTabLink";
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 import {
   HiMiniArrowRightEndOnRectangle,
   HiOutlineCog8Tooth,
-  HiOutlineUser,
 } from "react-icons/hi2";
 
-const Sidebar = () => {
+const FacultySideBar = () => {
   const activeLink = ({ isActive }) =>
     classNames(
       "flex items-center p-4 text-sm font-medium rounded-lg mb-2 transition-colors cursor-pointer",
       {
         "bg-blue-50 text-blue-500": isActive,
         "bg-gray-100 hover:bg-[#dfdddd] text-gray-400": !isActive,
-      }
+      },
     );
 
   // Get current user info
@@ -80,7 +79,7 @@ const Sidebar = () => {
               "=;expires=" +
                 new Date().toUTCString() +
                 ";path=/;domain=" +
-                window.location.hostname
+                window.location.hostname,
             );
         });
       };
@@ -107,7 +106,7 @@ const Sidebar = () => {
         {/* Navigation Links */}
         <div className="flex-1 overflow-y-auto">
           <nav className="mt-1 mb-8">
-            {tabLinks.map(({ icon: Icon, label, path }) => (
+            {FacultyTabLink.map(({ icon: Icon, label, path }) => (
               <NavLink key={label} to={path} className={activeLink}>
                 <Icon size={20} style={{ minWidth: "20px" }} />
                 <span className="ml-4 whitespace-nowrap">{label}</span>
@@ -117,7 +116,7 @@ const Sidebar = () => {
 
           {/* Bottom Navigation */}
           <nav>
-            <NavLink to="/settings" className={activeLink}>
+            <NavLink to="/faculty/settings" className={activeLink}>
               <HiOutlineCog8Tooth size={20} style={{ minWidth: "20px" }} />
               <span className="ml-4 whitespace-nowrap">Settings</span>
             </NavLink>
@@ -158,4 +157,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default FacultySideBar;

@@ -1,9 +1,10 @@
-import AdminDashboardLayout from "./pages/AdminDashboardLayout";
+// import AdminDashboardLayout from "./pages/AdminDashboardLayout";
+import FacultyDashboardLayout from "./pages/FacultyDashboardLayout";
 
 function App() {
   return (
     <>
-      <AdminDashboardLayout />
+      <FacultyDashboardLayout />
     </>
   );
 }

@@ -297,8 +297,6 @@ const TableTransaction = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      {/* Header */}
-
       {/* Filters */}
       <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

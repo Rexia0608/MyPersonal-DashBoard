@@ -1,4 +1,4 @@
-import Sidebar from "../components/dashboardComponents/Sidebar";
+import FacultySideBar from "../components/dashboardComponents/FacultySideBar";
 import TopHeader from "../components/dashboardComponents/TopHeader";
 import { Routes, Route } from "react-router-dom";
 import FacultyTransactionsRoute from "../routes/faculty/FacultyTransactionRoute";
@@ -7,25 +7,34 @@ import FacultyUsersRoute from "../routes/faculty/FacultyUsersRoute";
 import FacultyScheduleRoute from "../routes/faculty/FacultyScheduleRoute";
 import FacultySettingsRoute from "../routes/faculty/FacultySettingsRoute";
 
-const DashboardLayout = () => {
+const FacultyDashboardLayout = () => {
   return (
     <>
       <TopHeader />
       <div className="flex h-screen overflow-hidden">
-        <Sidebar />
+        <FacultySideBar />
         <div className="flex flex-col flex-1 overflow-auto">
           <div className="max-w-7xl mx-auto w-full bg-gray-50">
             <main className="bg-indigo-50">
               <Routes>
-                <Route path="/" element={<FacultyOverViewRoute />} />
-                <Route path="/home" element={<FacultyOverViewRoute />} />
-                <Route path="/users" element={<FacultyUsersRoute />} />
-                <Route path="/schedule" element={<FacultyScheduleRoute />} />
+                <Route path="/faculty" element={<FacultyOverViewRoute />} />
                 <Route
-                  path="/transactions"
+                  path="/faculty/home"
+                  element={<FacultyOverViewRoute />}
+                />
+                <Route path="/faculty/users" element={<FacultyUsersRoute />} />
+                <Route
+                  path="/faculty/schedule"
+                  element={<FacultyScheduleRoute />}
+                />
+                <Route
+                  path="/faculty/transactions"
                   element={<FacultyTransactionsRoute />}
                 />
-                <Route path="/settings" element={<FacultySettingsRoute />} />
+                <Route
+                  path="/faculty/settings"
+                  element={<FacultySettingsRoute />}
+                />
               </Routes>
             </main>
           </div>
@@ -35,4 +44,4 @@ const DashboardLayout = () => {
   );
 };
 
-export default DashboardLayout;
+export default FacultyDashboardLayout;

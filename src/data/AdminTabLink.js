@@ -5,27 +5,27 @@ import {
   HiClipboardDocumentList,
 } from "react-icons/hi2";
 
-const tabLinks = [
+const AdminTabLink = [
   {
     icon: HiMiniHome,
     label: "Home",
-    path: "/",
+    path: "/admin/",
   },
   {
     icon: HiMiniUsers,
     label: "Manage Users",
-    path: "/users",
+    path: "/admin/users",
   },
   {
     icon: HiClipboardDocumentList,
     label: "Manage School Year",
-    path: "/schedule",
+    path: "/admin/schedule",
   },
   {
     icon: HiFolderOpen,
     label: "Transactions History",
-    path: "/transactions",
+    path: "/admin/transactions",
   },
 ];
 
-export default tabLinks;
+export default AdminTabLink;

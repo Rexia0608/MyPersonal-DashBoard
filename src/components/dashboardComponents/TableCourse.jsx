@@ -144,7 +144,7 @@ const TableCourse = () => {
     let result = courses.filter((course) =>
       `${course.courseName} ${course.courseCode} ${course.category}`
         .toLowerCase()
-        .includes(search.toLowerCase())
+        .includes(search.toLowerCase()),
     );
 
     // Apply filters
@@ -154,7 +154,7 @@ const TableCourse = () => {
         break;
       case "closed":
         result = result.filter(
-          (c) => !c.isEnrollmentOpen && !isCourseExpired(c.schoolYear)
+          (c) => !c.isEnrollmentOpen && !isCourseExpired(c.schoolYear),
         );
         break;
       case "expired":
@@ -179,13 +179,13 @@ const TableCourse = () => {
           aValue = a.isEnrollmentOpen
             ? 2
             : isCourseExpired(a.schoolYear)
-            ? 0
-            : 1;
+              ? 0
+              : 1;
           bValue = b.isEnrollmentOpen
             ? 2
             : isCourseExpired(b.schoolYear)
-            ? 0
-            : 1;
+              ? 0
+              : 1;
         }
 
         if (aValue < bValue) return sortConfig.direction === "asc" ? -1 : 1;
@@ -200,7 +200,7 @@ const TableCourse = () => {
   const pagination = usePagination(filteredCourses.length, ITEMS_PER_PAGE);
   const currentCourses = filteredCourses.slice(
     pagination.startIndex,
-    pagination.endIndex
+    pagination.endIndex,
   );
 
   // Handle adding a new course
@@ -231,7 +231,7 @@ const TableCourse = () => {
       setIsSubmitting(false);
       pagination.goToFirst();
     },
-    [pagination]
+    [pagination],
   );
 
   // Handle deleting a course
@@ -264,7 +264,7 @@ const TableCourse = () => {
         // Ask for confirmation before closing
         const confirmed = window.confirm(
           "Are you sure you want to close enrollment for this course?\n\n" +
-            "⚠️ This action cannot be undone. Once closed, enrollment can never be reopened."
+            "⚠️ This action cannot be undone. Once closed, enrollment can never be reopened.",
         );
 
         if (!confirmed) {
@@ -277,7 +277,7 @@ const TableCourse = () => {
           isEnrollmentOpen: false,
           updatedAt: new Date().toISOString(),
         };
-      })
+      }),
     );
   }, []);
 
@@ -292,7 +292,7 @@ const TableCourse = () => {
       setSearch(e.target.value);
       pagination.goToFirst();
     },
-    [pagination]
+    [pagination],
   );
 
   // Reset to first page when filter changes
@@ -301,7 +301,7 @@ const TableCourse = () => {
       setFilter(e.target.value);
       pagination.goToFirst();
     },
-    [pagination]
+    [pagination],
   );
 
   return (
@@ -487,8 +487,8 @@ const TableCourse = () => {
                                     canToggle
                                       ? "Close Enrollment"
                                       : isCourseExpired(course.schoolYear)
-                                      ? "Expired courses cannot be modified"
-                                      : "Enrollment is already closed"
+                                        ? "Expired courses cannot be modified"
+                                        : "Enrollment is already closed"
                                   }
                                   aria-label={
                                     canToggle
