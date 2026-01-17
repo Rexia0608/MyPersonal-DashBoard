@@ -9,7 +9,7 @@ import {
 import { motion } from "framer-motion";
 import TableTransaction from "../../components/dashboardComponents/TableTransaction";
 
-const ManageTransactionRoute = () => {
+const FacultyTransactionRoute = () => {
   return (
     <>
       <div className="flex-1 overflow-auto relative z-10">
@@ -65,4 +65,4 @@ const ManageTransactionRoute = () => {
   );
 };
 
-export default ManageTransactionRoute;
+export default FacultyTransactionRoute;

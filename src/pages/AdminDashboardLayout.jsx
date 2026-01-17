@@ -17,12 +17,21 @@ const DashboardLayout = () => {
           <div className="max-w-7xl mx-auto w-full bg-gray-50">
             <main className="bg-indigo-50">
               <Routes>
-                <Route path="/" element={<AdminOverViewRoute />} />
-                <Route path="/home" element={<AdminOverViewRoute />} />
-                <Route path="/users" element={<AdminUsersRoute />} />
-                <Route path="/schedule" element={<AdminScheduleRoute />} />
-                <Route path="/transactions" element={<AdminTransactions />} />
-                <Route path="/settings" element={<AdminSettingsRoute />} />
+                <Route path="/admin/" element={<AdminOverViewRoute />} />
+                <Route path="/admin/home" element={<AdminOverViewRoute />} />
+                <Route path="/adminsers" element={<AdminUsersRoute />} />
+                <Route
+                  path="/admin/schedule"
+                  element={<AdminScheduleRoute />}
+                />
+                <Route
+                  path="/admin/transactions"
+                  element={<AdminTransactions />}
+                />
+                <Route
+                  path="/admin/settings"
+                  element={<AdminSettingsRoute />}
+                />
               </Routes>
             </main>
           </div>

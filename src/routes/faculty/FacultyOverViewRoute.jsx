@@ -11,7 +11,7 @@ import CategoryDistributionChart from "../../components/dashboardComponents/Cate
 import OrderDistribututionChart from "../../components/dashboardComponents/OrderDistribututionChart";
 import ProductPerformance from "../../components/dashboardComponents/ProductPerformance";
 
-const AdminOverViewRoute = () => {
+const FacultyOverViewRoute = () => {
   return (
     <>
       <div className="flex-1 overflow-auto relative z-10">
@@ -60,4 +60,4 @@ const AdminOverViewRoute = () => {
   );
 };
 
-export default AdminOverViewRoute;
+export default FacultyOverViewRoute;

@@ -7,7 +7,7 @@ import {
   HiOutlineCalendarDateRange,
 } from "react-icons/hi2";
 
-const ManageUsersRoute = () => {
+const FacultyUsersRoute = () => {
   return (
     <>
       <div className="flex-1 overflow-auto relative z-10">
@@ -47,4 +47,4 @@ const ManageUsersRoute = () => {
   );
 };
 
-export default ManageUsersRoute;
+export default FacultyUsersRoute;

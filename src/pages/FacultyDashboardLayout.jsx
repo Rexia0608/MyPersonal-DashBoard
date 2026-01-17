@@ -1,11 +1,11 @@
 import Sidebar from "../components/dashboardComponents/Sidebar";
 import TopHeader from "../components/dashboardComponents/TopHeader";
 import { Routes, Route } from "react-router-dom";
-import AdminTransactions from "../routes/admin/AdminTransactionRoute";
-import AdminOverViewRoute from "../routes/admin/AdminOverviewRoute";
-import AdminUsersRoute from "../routes/admin/AdminUsersRoute";
-import AdminScheduleRoute from "../routes/admin/AdminScheduleRoute";
-import AdminSettingsRoute from "../routes/admin/AdminSettingsRoute";
+import FacultyTransactionsRoute from "../routes/faculty/FacultyTransactionRoute";
+import FacultyOverViewRoute from "../routes/faculty/FacultyOverviewRoute";
+import FacultyUsersRoute from "../routes/faculty/FacultyUsersRoute";
+import FacultyScheduleRoute from "../routes/faculty/FacultyScheduleRoute";
+import FacultySettingsRoute from "../routes/faculty/FacultySettingsRoute";
 
 const DashboardLayout = () => {
   return (
@@ -17,12 +17,15 @@ const DashboardLayout = () => {
           <div className="max-w-7xl mx-auto w-full bg-gray-50">
             <main className="bg-indigo-50">
               <Routes>
-                <Route path="/" element={<AdminOverViewRoute />} />
-                <Route path="/home" element={<AdminOverViewRoute />} />
-                <Route path="/users" element={<AdminUsersRoute />} />
-                <Route path="/schedule" element={<AdminScheduleRoute />} />
-                <Route path="/transactions" element={<AdminTransactions />} />
-                <Route path="/settings" element={<AdminSettingsRoute />} />
+                <Route path="/" element={<FacultyOverViewRoute />} />
+                <Route path="/home" element={<FacultyOverViewRoute />} />
+                <Route path="/users" element={<FacultyUsersRoute />} />
+                <Route path="/schedule" element={<FacultyScheduleRoute />} />
+                <Route
+                  path="/transactions"
+                  element={<FacultyTransactionsRoute />}
+                />
+                <Route path="/settings" element={<FacultySettingsRoute />} />
               </Routes>
             </main>
           </div>
