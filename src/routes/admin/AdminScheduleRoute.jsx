@@ -1,6 +1,6 @@
 import TableCourse from "../../components/dashboardComponents/TableCourse";
 
-const ManageUsersRoute = () => {
+const AdminUsersRoute = () => {
   return (
     <>
       <div className="flex-1 overflow-auto relative z-10">
@@ -14,4 +14,4 @@ const ManageUsersRoute = () => {
   );
 };
 
-export default ManageUsersRoute;
+export default AdminUsersRoute;

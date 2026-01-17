@@ -1,11 +1,11 @@
 import Sidebar from "../components/dashboardComponents/Sidebar";
 import TopHeader from "../components/dashboardComponents/TopHeader";
 import { Routes, Route } from "react-router-dom";
-import ManageTransactions from "../routes/admin/ManageTransactionRoute";
+import AdminTransactions from "../routes/admin/AdminTransactionRoute";
 import AdminOverViewRoute from "../routes/admin/AdminOverviewRoute";
-import ManageUsersRoute from "../routes/admin/ManageUsersRoute";
-import ManageScheduleRoute from "../routes/admin/ManageScheduleRoute";
-import ManageSettingsRoute from "../routes/admin/ManageSettingsRoute";
+import AdminUsersRoute from "../routes/admin/AdminUsersRoute";
+import AdminScheduleRoute from "../routes/admin/AdminScheduleRoute";
+import AdminSettingsRoute from "../routes/admin/AdminSettingsRoute";
 
 const DashboardLayout = () => {
   return (
@@ -19,10 +19,10 @@ const DashboardLayout = () => {
               <Routes>
                 <Route path="/" element={<AdminOverViewRoute />} />
                 <Route path="/home" element={<AdminOverViewRoute />} />
-                <Route path="/users" element={<ManageUsersRoute />} />
-                <Route path="/schedule" element={<ManageScheduleRoute />} />
-                <Route path="/transactions" element={<ManageTransactions />} />
-                <Route path="/settings" element={<ManageSettingsRoute />} />
+                <Route path="/users" element={<AdminUsersRoute />} />
+                <Route path="/schedule" element={<AdminScheduleRoute />} />
+                <Route path="/transactions" element={<AdminTransactions />} />
+                <Route path="/settings" element={<AdminSettingsRoute />} />
               </Routes>
             </main>
           </div>

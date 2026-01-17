@@ -1,9 +1,9 @@
-import DashboardLayout from "./pages/DashboardLayout";
+import AdminDashboardLayout from "./pages/AdminDashboardLayout";
 
 function App() {
   return (
     <>
-      <DashboardLayout />
+      <AdminDashboardLayout />
     </>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Shield, Save, TestTube } from "lucide-react";
 
-const ManageSettingsRoute = () => {
+const AdminSettingsRoute = () => {
   const [settings, setSettings] = useState({
     // Email
     adminEmail: "admin@enrollplus.edu",
@@ -445,4 +445,4 @@ const ManageSettingsRoute = () => {
   );
 };
 
-export default ManageSettingsRoute;
+export default AdminSettingsRoute;
